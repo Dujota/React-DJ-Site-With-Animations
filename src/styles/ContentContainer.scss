@@ -1,0 +1,45 @@
+.overlay {
+  background-image: url('../images/pattern.png');
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: 0.4rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+
+  .content-container {
+    padding: 20px;
+    min-height: 70vh;
+    min-width: 50%;
+    // overflow-x: hidden;
+    animation-duration: 2.3s;
+
+    border: solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    .close-button-container {
+      padding: 20px;
+
+      color: rgba(255, 255, 255, 0.8);
+
+      .close-icon {
+        cursor: pointer;
+        font-size: 4rem;
+        animation-duration: 2.3s;
+        width: auto;
+        height: auto;
+      }
+      .close-text {
+        margin-top: 0.8rem;
+        display: block;
+        font-size: 1.2rem;
+      }
+    }
+
+    .title {
+      color: white;
+      padding: 20px;
+    }
+  }
+}
