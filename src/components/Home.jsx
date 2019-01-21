@@ -63,8 +63,8 @@ export default class Home extends Component {
           {contact && (
             <Contact toggleNavBarDisplay={this.toggleNavBarDisplay} />
           )}
-          {about && <About />}
-          {media && <Media />}
+          {about && <About toggleNavBarDisplay={this.toggleNavBarDisplay} />}
+          {media && <Media toggleNavBarDisplay={this.toggleNavBarDisplay} />}
         </div>
       </div>
     );

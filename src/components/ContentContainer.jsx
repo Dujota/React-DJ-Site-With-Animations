@@ -49,8 +49,7 @@ class ContentContainer extends Component {
 }
 
 ContentContainer.propTypes = {
-  header: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired
+  header: PropTypes.string.isRequired
 };
 
 export default ContentContainer;

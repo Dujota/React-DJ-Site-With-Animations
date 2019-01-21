@@ -28,6 +28,9 @@ class About extends Component {
 
   handleCloseButton = () => {
     this.closeAnimation();
+    setTimeout(() => {
+      this.props.toggleNavBarDisplay('about');
+    }, 1500);
   };
 
   render() {
