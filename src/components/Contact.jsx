@@ -22,19 +22,23 @@ class Contact extends Component {
     }
   };
 
+  componentWillUnmount = () => {
+    console.log('Contact Unmounted');
+  };
+
   closeAnimation = () => {
     animateCss('.close-icon', 'rotateOut');
     animateCss('.contact-details', 'fadeOutLeft');
     animateCss('.form-content', 'fadeOutRight');
     animateCss('.content-container', 'fadeOut');
+
+    setTimeout(() => {
+      this.props.toggleNavBarDisplay('contact');
+    }, 1500);
   };
 
   handleCloseButton = () => {
     this.closeAnimation();
-
-    setTimeout(() => {
-      window.location.assign('/');
-    }, 1700);
   };
 
   render() {
