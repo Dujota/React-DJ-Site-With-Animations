@@ -8,12 +8,27 @@ import Contact from './Contact';
 import Media from './Media';
 
 export default class Home extends Component {
-  state = {
-    showNavBar: true
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      showNavBar: true,
+      loading: true,
+      about: false,
+      contact: false,
+      media: false
+    };
+
+    this._isMounted = false;
+  }
 
   componentDidMount = () => {
     this.state.showNavBar && this.fadeIn();
+    this._isMounted = true;
+    this.setState({ loading: false });
+  };
+
+  componentWillUnmount = () => {
+    console.log('unmounting');
   };
 
   toggleComponentDisplay = e => {
@@ -27,15 +42,24 @@ export default class Home extends Component {
     }, 1600);
   };
 
+  onLinkClicked = e => {
+    this._isMounted = false;
+    return this.toggleComponentDisplay(e);
+  };
+
   fadeOut = () => {
-    console.log('Fading Out');
     animateCss('.about', 'fadeOutLeft');
     animateCss('.media', 'fadeOutRight');
     animateCss('.contact', 'fadeOut');
+    // home does not unMount, need a way to control when to allow onLinkClicked
+    // to be active after 1 second
+    // so when we navigate back to Home, the links work.
+    setTimeout(() => {
+      return (this._isMounted = true);
+    }, 1000);
   };
 
   fadeIn = () => {
-    console.log('Fading In');
     animateCss('.about', 'fadeInLeft');
     animateCss('.media', 'fadeInRight');
     animateCss('.contact', 'fadeIn');
@@ -47,18 +71,20 @@ export default class Home extends Component {
   };
 
   render() {
-    const { contact, about, media, showNavBar } = this.state;
+    const { contact, about, media, showNavBar, loading } = this.state;
 
     return (
       <div id='home'>
         <div className='home-overlay'>
+          {loading && console.log('SomeRando TEXT ')}
+
           {/* NAV BAR STARTS HERE */}
           {showNavBar && (
             <nav id='navbar'>
               <span className='about'>
                 <span
                   className='ui inverted blue basic button '
-                  onClick={this.toggleComponentDisplay}>
+                  onClick={this._isMounted ? this.onLinkClicked : null}>
                   About
                 </span>
               </span>
@@ -66,14 +92,14 @@ export default class Home extends Component {
               <span className='contact'>
                 <span
                   className='ui inverted violet basic button '
-                  onClick={this.toggleComponentDisplay}>
+                  onClick={this._isMounted ? this.onLinkClicked : null}>
                   Contact
                 </span>
               </span>
               <span className='media'>
                 <span
                   className='ui inverted purple basic button'
-                  onClick={this.toggleComponentDisplay}>
+                  onClick={this._isMounted ? this.onLinkClicked : null}>
                   Media
                 </span>
               </span>
