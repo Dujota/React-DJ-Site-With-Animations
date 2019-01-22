@@ -21,7 +21,7 @@
     .close-button-container {
       padding: 20px;
 
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.5);
 
       .close-icon {
         cursor: pointer;
@@ -29,6 +29,9 @@
         animation-duration: 2.3s;
         width: auto;
         height: auto;
+        &:hover {
+          color: rgba(255, 255, 255, 0.72);
+        }
       }
       .close-text {
         margin-top: 0.8rem;

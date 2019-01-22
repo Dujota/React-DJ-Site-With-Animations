@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../styles/ContentContainer.scss';
+
 import { animateCss } from '../utils/animate';
+import '../styles/ContentContainer.scss';
 
 class ContentContainer extends Component {
   state = {
@@ -28,8 +29,8 @@ class ContentContainer extends Component {
           <section className='close-button-container'>
             <i
               className='close icon close-icon'
-              onClick={!loading ? handleCloseButton : undefined}
-              onMouseEnter={!loading ? this.pulseHover : undefined}
+              onClick={!loading ? handleCloseButton : null}
+              onMouseEnter={!loading ? this.pulseHover : null}
             />
             <span className='close-text'>Close</span>
           </section>
