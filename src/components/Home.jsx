@@ -44,6 +44,7 @@ export default class Home extends Component {
 
   onLinkClicked = e => {
     this._isMounted = false;
+    this.setState({ loading: true });
     return this.toggleComponentDisplay(e);
   };
 
@@ -56,7 +57,7 @@ export default class Home extends Component {
     // so when we navigate back to Home, the links work.
     setTimeout(() => {
       return (this._isMounted = true);
-    }, 1000);
+    }, 1500);
   };
 
   fadeIn = () => {
@@ -76,15 +77,15 @@ export default class Home extends Component {
     return (
       <div id='home'>
         <div className='home-overlay'>
-          {loading && console.log('SomeRando TEXT ')}
-
           {/* NAV BAR STARTS HERE */}
           {showNavBar && (
             <nav id='navbar'>
               <span className='about'>
                 <span
                   className='ui inverted blue basic button '
-                  onClick={this._isMounted ? this.onLinkClicked : null}>
+                  onClick={
+                    this._isMounted && !loading ? this.onLinkClicked : null
+                  }>
                   About
                 </span>
               </span>
@@ -92,14 +93,18 @@ export default class Home extends Component {
               <span className='contact'>
                 <span
                   className='ui inverted violet basic button '
-                  onClick={this._isMounted ? this.onLinkClicked : null}>
+                  onClick={
+                    this._isMounted && !loading ? this.onLinkClicked : null
+                  }>
                   Contact
                 </span>
               </span>
               <span className='media'>
                 <span
                   className='ui inverted purple basic button'
-                  onClick={this._isMounted ? this.onLinkClicked : null}>
+                  onClick={
+                    this._isMounted && !loading ? this.onLinkClicked : null
+                  }>
                   Media
                 </span>
               </span>

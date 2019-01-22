@@ -16,9 +16,7 @@ class Contact extends Component {
     console.log('Contact mounted');
 
     if (this.state.loading) {
-      animateCss('.contact-details', 'fadeInLeft');
-      animateCss('.form-content', 'fadeInRight');
-      animateCss('.close-icon', 'rotateIn');
+      this.enterAnimation();
       this.setState({ loading: false });
     }
   };
@@ -27,19 +25,26 @@ class Contact extends Component {
     console.log('Contact Unmounted');
   };
 
+  enterAnimation = () => {
+    animateCss('.contact-details', 'fadeInLeft');
+    animateCss('.form-content', 'fadeInRight');
+    animateCss('.close-icon', 'rotateIn');
+  };
+
   closeAnimation = () => {
     animateCss('.close-icon', 'rotateOut');
     animateCss('.contact-details', 'fadeOutLeft');
     animateCss('.form-content', 'fadeOutRight');
     animateCss('.content-container', 'fadeOut');
-
-    setTimeout(() => {
-      this.props.toggleNavBarDisplay('contact');
-    }, 1500);
   };
 
   handleCloseButton = () => {
+    this.setState({ loading: true });
     this.closeAnimation();
+    setTimeout(() => {
+      // this.props.toggleNavBarDisplay('contact');
+      window.location.replace('/');
+    }, 1500);
   };
 
   render() {
