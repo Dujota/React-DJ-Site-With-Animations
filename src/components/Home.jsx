@@ -13,7 +13,7 @@ export default class Home extends Component {
   };
 
   componentDidMount = () => {
-    console.log('Home mounted');
+    this.state.showNavBar && this.fadeIn();
   };
 
   toggleComponentDisplay = e => {
@@ -24,7 +24,7 @@ export default class Home extends Component {
         [name]: !this.state[name],
         showNavBar: !this.state.showNavBar
       });
-    }, 2500);
+    }, 1600);
   };
 
   fadeOut = () => {
