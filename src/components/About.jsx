@@ -14,6 +14,7 @@ class About extends Component {
 
   componentDidMount = () => {
     if (this.state.loading) {
+      animateCss('.close-icon', 'rotateIn');
       animateCss('.card-1', 'fadeInLeft');
       animateCss('.card-3', 'fadeInRight', this.setState({ loading: false }));
     }

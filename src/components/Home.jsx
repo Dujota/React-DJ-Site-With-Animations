@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Home.scss';
+import { animateCss } from '../utils/animate';
 
 // Components
 import About from './About';
@@ -15,16 +16,29 @@ export default class Home extends Component {
     console.log('Home mounted');
   };
 
-  componentWillUnmount = () => {
-    console.log('Home unmounted');
-  };
-
   toggleComponentDisplay = e => {
     const name = e.currentTarget.innerText.toLowerCase();
-    this.setState({
-      [name]: !this.state[name],
-      showNavBar: !this.state.showNavBar
-    });
+    this.fadeOut();
+    setTimeout(() => {
+      this.setState({
+        [name]: !this.state[name],
+        showNavBar: !this.state.showNavBar
+      });
+    }, 2500);
+  };
+
+  fadeOut = () => {
+    console.log('Fading Out');
+    animateCss('.about', 'fadeOutLeft');
+    animateCss('.media', 'fadeOutRight');
+    animateCss('.contact', 'fadeOut');
+  };
+
+  fadeIn = () => {
+    console.log('Fading In');
+    animateCss('.about', 'fadeInLeft');
+    animateCss('.media', 'fadeInRight');
+    animateCss('.contact', 'fadeIn');
   };
 
   toggleNavBarDisplay = name => {
@@ -40,23 +54,28 @@ export default class Home extends Component {
         <div className='home-overlay'>
           {/* NAV BAR STARTS HERE */}
           {showNavBar && (
-            <nav id='navbar' className='ui container'>
-              <span
-                className='ui inverted blue basic button about'
-                onClick={this.toggleComponentDisplay}>
-                About
+            <nav id='navbar'>
+              <span className='about'>
+                <span
+                  className='ui inverted blue basic button '
+                  onClick={this.toggleComponentDisplay}>
+                  About
+                </span>
               </span>
 
-              <span
-                className='ui inverted violet basic button contact'
-                onClick={this.toggleComponentDisplay}>
-                Contact
+              <span className='contact'>
+                <span
+                  className='ui inverted violet basic button '
+                  onClick={this.toggleComponentDisplay}>
+                  Contact
+                </span>
               </span>
-
-              <span
-                className='ui inverted purple basic button'
-                onClick={this.toggleComponentDisplay}>
-                Media
+              <span className='media'>
+                <span
+                  className='ui inverted purple basic button'
+                  onClick={this.toggleComponentDisplay}>
+                  Media
+                </span>
               </span>
             </nav>
           )}

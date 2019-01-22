@@ -18,6 +18,7 @@ class Contact extends Component {
     if (this.state.loading) {
       animateCss('.contact-details', 'fadeInLeft');
       animateCss('.form-content', 'fadeInRight');
+      animateCss('.close-icon', 'rotateIn');
       this.setState({ loading: false });
     }
   };
