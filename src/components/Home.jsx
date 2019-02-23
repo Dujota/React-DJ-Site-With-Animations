@@ -39,7 +39,7 @@ export default class Home extends Component {
         [name]: !this.state[name],
         showNavBar: !this.state.showNavBar
       });
-    }, 1600);
+    }, 1500);
   };
 
   onLinkClicked = e => {
