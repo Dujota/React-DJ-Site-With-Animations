@@ -1,6 +1,6 @@
 #about {
   // BG IMAGE
-  background-image: url('../images/img3.jpg');
+  background-image: url('../images/original-dot-overlay.jpg');
   background-size: cover;
 
   /* Set rules to fill background */
@@ -67,10 +67,12 @@
       height: 100%;
 
       .wrapper {
+
         // padding-top: 15px;
         h2 {
           font-size: 25px;
           color: white;
+
           .headphones {
             color: violet;
           }
@@ -92,6 +94,7 @@
             }
           }
         }
+
         div {
           color: white;
         }
@@ -100,10 +103,4 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px; /* 50% */
-  }
-}
+@media screen and (max-width: 1024px) {}

@@ -1,8 +1,8 @@
 .overlay {
-  background-image: url('../images/pattern.png');
+  // background-image: url('../images/pattern.png');
   min-width: 100vw;
   min-height: 100vh;
-  background-size: 0.4rem;
+  // background-size: 0.4rem;
   display: flex;
   align-items: center;
   position: fixed;
@@ -29,10 +29,12 @@
         animation-duration: 2.3s;
         width: auto;
         height: auto;
+
         &:hover {
           color: rgba(255, 255, 255, 0.72);
         }
       }
+
       .close-text {
         margin-top: 0.8rem;
         display: block;
