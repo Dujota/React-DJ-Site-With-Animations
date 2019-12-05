@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.819f2ca8.chunk.css",
+    "main.js": "/static/js/main.562efdcf.chunk.js",
+    "main.js.map": "/static/js/main.562efdcf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.aa0ccf0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.aa0ccf0b.js.map",
+    "static/js/2.fb717949.chunk.js": "/static/js/2.fb717949.chunk.js",
+    "static/js/2.fb717949.chunk.js.map": "/static/js/2.fb717949.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e7263f9a9d92b689a9ea03599736f5e4.js": "/precache-manifest.e7263f9a9d92b689a9ea03599736f5e4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.819f2ca8.chunk.css.map": "/static/css/main.819f2ca8.chunk.css.map",
+    "static/media/Media.scss": "/static/media/controller.4c9b9f64.jpeg",
+    "static/media/Contact.scss": "/static/media/img2.fc0282e4.jpg",
+    "static/media/About.scss": "/static/media/original-dot-overlay.a97bdd06.jpg",
+    "static/media/Home.scss": "/static/media/red-dress-dotted-low-exposure.e6b4ad73.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa0ccf0b.js",
+    "static/js/2.fb717949.chunk.js",
+    "static/css/main.819f2ca8.chunk.css",
+    "static/js/main.562efdcf.chunk.js"
+  ]
+}
