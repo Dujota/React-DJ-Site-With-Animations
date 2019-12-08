@@ -1,0 +1,171 @@
+#about {
+  // BG IMAGE
+  background-image: url('../images/img2.jpg');
+  background-size: cover;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .ui.container {
+      width: 100vw;
+    }
+  }
+
+  .content-container {
+
+    @media screen and (max-width: 420px) {
+      padding: 0px;
+    }
+
+    .header.title {
+      @media screen and (max-width: 685px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media screen and (min-height: 700px) {
+        margin-top: 1rem;
+      }
+
+      @media screen and (max-width: 460px) {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .intro {
+      color: white;
+      line-height: 150%;
+      text-align: justify;
+      text-justify: inter-word;
+
+      width: 90%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 685px) {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .cards-segment {
+      background-color: transparent;
+
+      // Flex Settings
+      display: flex;
+      align-items: center;
+      align-self: flex-end;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      // DIVIDERS
+      .divider {
+        border-left: solid 0.1rem lightgrey;
+        min-height: 250px;
+
+        @media screen and (max-width: 685px) {
+          display: none;
+        }
+      }
+
+      // CARDS
+      .about-card {
+        background-color: transparent;
+        outline: none;
+        border-color: transparent;
+        animation-duration: 2.3s;
+
+        // Positioning
+        margin: 0;
+        margin-top: 2rem;
+
+        // Card Sizing
+        max-width: 25%;
+        min-width: 150px;
+        height: 100%;
+
+        @media screen and (max-width: 685px) {
+          margin-top: 0rem;
+        }
+
+        .wrapper {
+
+          // padding-top: 15px;
+          h2 {
+            font-size: 25px;
+            color: white;
+
+            @media screen and (max-width: 685px) {
+              font-size: 1rem;
+            }
+
+            .headphones {
+              color: violet;
+            }
+
+            .video {
+              color: lightblue;
+            }
+
+            .volume {
+              color: lightpink;
+            }
+
+            .icon-header {
+              margin: 0.5rem;
+
+              div {
+                margin-top: 0.7rem;
+                line-height: 150%;
+
+                @media screen and (max-width: 685px) {
+                  font-size: 0.8rem;
+                }
+
+                @media screen and (max-width: 420px) {
+                  margin-top: 0.2rem;
+                }
+              }
+            }
+          }
+
+          div.sub.header {
+            color: white;
+            text-align: justify;
+            text-justify: inter-word;
+
+            @media screen and (max-width: 420px) {
+              width: 65vw;
+              margin: 0 auto;
+            }
+          }
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 675px) {
+          flex: 1 0 33%;
+          max-width: 33%;
+          min-width: 180px;
+        }
+
+        @media screen and (max-width: 685px) {
+          min-width: 300px;
+        }
+
+        @media screen and (max-width: 400px) {}
+      }
+    }
+  }
+}

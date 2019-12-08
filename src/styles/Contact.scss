@@ -1,0 +1,176 @@
+#contact {
+  // BG IMAGE
+  background-image: url('../images/controller.jpeg');
+  background-size: cover;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .contact-content {
+    display: flex;
+
+    @media only screen and (max-width: 860px) {
+      flex-direction: column;
+    }
+
+    .contact-details {
+      width: 50%;
+      animation-duration: 3s;
+
+      @media only screen and (max-width: 860px) {
+        width: auto;
+      }
+
+      .contact-me-text {
+        font-size: 1.25rem;
+        line-height: 175%;
+        color: white;
+        width: 81%;
+        text-align: justify;
+        text-justify: inter-word;
+
+        margin: 0 0 2rem 4.5rem;
+
+        @media only screen and (max-width: 860px) {
+          font-size: 1rem;
+          width: 100%;
+          margin: 0px 0px 10px 0px;
+
+        }
+
+        @media only screen and (max-width: 400px) {
+          font-size: 0.8rem;
+          margin-top: 5px;
+        }
+      }
+
+      .icon-container {
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (max-width: 860px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: 400px) {
+          margin-bottom: 1rem;
+        }
+
+        .email-icon,
+        .website-icon,
+        .facebook-icon,
+        .instagram-icon {
+          color: white;
+          text-align: left;
+          font-size: 1.8rem;
+          margin-left: 10%;
+          padding-bottom: 2rem;
+
+          @media only screen and (max-width: 860px) {
+            font-size: 1rem;
+            min-width: 50%;
+            margin-left: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+          }
+
+          @media only screen and (max-width: 400px) {
+            font-size: 0.8rem;
+            margin-bottom: 2px;
+          }
+
+          i {
+            color: rgba(255, 255, 255, 0.55);
+          }
+
+          .text-content {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+            text-decoration-color: rgba(255, 255, 255, 0.55);
+
+            @media only screen and (max-width: 860px) {
+              font-size: 1rem;
+            }
+
+            @media only screen and (max-width: 400px) {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .form-content {
+      width: 50%;
+      animation-duration: 3s;
+
+      @media only screen and (max-width: 860px) {
+        width: 100%;
+      }
+
+      form {
+        .field {
+          textarea {
+            height: 200px;
+
+            @media only screen and (max-width: 860px) {
+              height: 100px;
+            }
+          }
+
+          input,
+          textarea {
+            font-size: 1.2rem;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.15);
+            border: solid 0.1rem rgba(255, 255, 255, 0.4);
+
+            @media only screen and (max-width: 860px) {
+              font-size: 1rem;
+            }
+
+            &:hover,
+            &:focus {
+              background-color: rgba(255, 255, 255, 0.2);
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+
+          ::placeholder {
+            font-size: 1.2rem;
+
+            @media only screen and (max-width: 860px) {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .submit-button {
+          position: absolute;
+          left: 0;
+          color: white;
+          background-color: rgba(255, 255, 255, 0.15);
+          border: solid 0.1rem rgba(255, 255, 255, 0.4);
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+    }
+  }
+}

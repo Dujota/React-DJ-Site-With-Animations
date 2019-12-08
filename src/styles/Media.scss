@@ -1,0 +1,43 @@
+#media {
+  background-image: url('../images/decks.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: fit;
+
+  .overlay {
+    display: block;
+    position: relative;
+
+    .content-container {
+      @media screen and (max-width: 460px) {
+        margin-top: 0px;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+
+        .carousel.carousel-slider {
+          // Override the React Responsive Carousel width property
+          width: 670px !important;
+          height: 450px;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+
+            @media screen and (max-width: 380px) {}
+          }
+
+          @media screen and (max-width: 380px) {
+            height: 310px;
+          }
+        }
+      }
+    }
+  }
+}
