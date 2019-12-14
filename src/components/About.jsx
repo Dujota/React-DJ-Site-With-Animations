@@ -44,9 +44,9 @@ class About extends Component {
           handleCloseButton={this.handleCloseButton}
         >
           <h3 className="ui header intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt harum
-            reprehenderit recusandae nemo laudantium sit libero repellat modi,
-            laboriosam quibusdam dolorum, culpa magnam. Minus, nostrum.
+            Based out of Toronto, and serving all surrounding areas. Helping
+            parties and events become even more memoarable. Custom sets centered
+            around three things I love; Music, People and Good Times!
           </h3>
 
           <div className="ui cards-segment">
