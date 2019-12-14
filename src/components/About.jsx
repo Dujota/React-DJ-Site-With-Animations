@@ -40,7 +40,7 @@ class About extends Component {
     return (
       <div id="about">
         <ContentContainer
-          header="DJ Olgie"
+          header="DJ Ollggie"
           handleCloseButton={this.handleCloseButton}
         >
           <h3 className="ui header intro">
@@ -50,7 +50,7 @@ class About extends Component {
           </h3>
 
           <div className="ui cards-segment">
-            {/* CARD 1 */}
+            {/* CARD 1 - CUSTOM EXPERIENCE */}
             <section className="ui about-card card-1">
               <div className="wrapper">
                 <h2 className="ui icon header ">
@@ -58,9 +58,9 @@ class About extends Component {
                   <div className="content icon-header">
                     Custom Experience
                     <div className="sub header">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quidem dicta distinctio deleniti suscipit labore
-                      accusantium nisi dolor mollitia magnam animi.
+                      Every event or party is unique. I customize every playlist
+                      to perfectly match any venue, ambiance and your taste. I
+                      even take special requests!
                     </div>
                   </div>
                 </h2>
@@ -70,7 +70,7 @@ class About extends Component {
             {/* Divider */}
             <section className="divider" />
 
-            {/* CARD 2 */}
+            {/* CARD 2 - VERSATILE SOUND */}
             <section className="ui about-card card-2">
               <div className="wrapper">
                 <h2 className="ui icon header">
@@ -78,9 +78,10 @@ class About extends Component {
                   <div className="content icon-header">
                     Versatile Sound
                     <div className="sub header">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sapiente totam, odio rem odit consequuntur voluptas sunt
-                      dolorum corporis. Minima, laudantium?
+                      I have a wide array of music available to choose from. I
+                      play House, Tech house, Deep House, Lounge, Electro Swing,
+                      Disco Latina, Top 40 and just about everything to make
+                      your guests dance!
                     </div>
                   </div>
                 </h2>
@@ -90,7 +91,7 @@ class About extends Component {
             {/* Divider */}
             <section className="divider" />
 
-            {/* CARD 3 */}
+            {/* CARD 3 - Relive The Moment */}
             <section className="ui about-card card-3">
               <div className="wrapper">
                 <h2 className="ui icon header">
