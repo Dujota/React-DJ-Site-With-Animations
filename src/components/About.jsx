@@ -44,9 +44,9 @@ class About extends Component {
           handleCloseButton={this.handleCloseButton}
         >
           <h3 className="ui header intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt harum
-            reprehenderit recusandae nemo laudantium sit libero repellat modi,
-            laboriosam quibusdam dolorum, culpa magnam. Minus, nostrum.
+            Based out of Toronto and serving all surrounding areas. Helping
+            parties and events become even more memoarable. Custom sets centered
+            around three things I love; Music, People and Good Times!
           </h3>
 
           <div className="ui cards-segment">
@@ -56,7 +56,7 @@ class About extends Component {
                 <h2 className="ui icon header ">
                   <i className="headphones icon" />
                   <div className="content icon-header">
-                    Catchy Phrase
+                    Custom Experience
                     <div className="sub header">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quidem dicta distinctio deleniti suscipit labore
@@ -76,7 +76,7 @@ class About extends Component {
                 <h2 className="ui icon header">
                   <i className="volume up icon" />
                   <div className="content icon-header">
-                    Second Phrase
+                    Versatile Sound
                     <div className="sub header">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Sapiente totam, odio rem odit consequuntur voluptas sunt
@@ -96,7 +96,7 @@ class About extends Component {
                 <h2 className="ui icon header">
                   <i className="video icon" />
                   <div className="content icon-header">
-                    Video Thing
+                    Relive the Moment
                     <div className="sub header">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Atque magni ex fugit reprehenderit deserunt quasi eum hic

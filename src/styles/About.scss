@@ -52,10 +52,11 @@
       text-align: justify;
       text-justify: inter-word;
 
-      width: 90%;
+      width: 70%;
       margin: 0 auto;
 
       @media screen and (max-width: 685px) {
+        width: 85%;
         font-size: 0.8rem;
         margin-bottom: 0.5rem;
       }
