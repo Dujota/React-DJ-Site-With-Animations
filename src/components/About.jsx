@@ -96,7 +96,7 @@ class About extends Component {
                 <h2 className="ui icon header">
                   <i className="video icon" />
                   <div className="content icon-header">
-                    A Parting Message
+                    Inspirational
                     <div className="sub header">
                       "Without Music life will be a mistake" -
                       <i>Friedrich Nietzsche </i>
