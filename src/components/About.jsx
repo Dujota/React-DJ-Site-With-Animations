@@ -78,10 +78,9 @@ class About extends Component {
                   <div className="content icon-header">
                     Versatile Sound
                     <div className="sub header">
-                      I have a wide array of music available to choose from. I
-                      play House, Tech house, Deep House, Lounge, Electro Swing,
-                      Disco Latina, Top 40 and just about everything to make
-                      your guests dance!
+                      I have a wide array of music available. I play House,
+                      Lounge, Electro Swing, Disco Latina, Top 40 and just about
+                      everything to make your guests dance!
                     </div>
                   </div>
                 </h2>
@@ -97,11 +96,10 @@ class About extends Component {
                 <h2 className="ui icon header">
                   <i className="video icon" />
                   <div className="content icon-header">
-                    Relive the Moment
+                    A Parting Message
                     <div className="sub header">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Atque magni ex fugit reprehenderit deserunt quasi eum hic
-                      molestias explicabo est.
+                      "Without Music life will be a mistake" -
+                      <i>Friedrich Nietzsche </i>
                     </div>
                   </div>
                 </h2>
