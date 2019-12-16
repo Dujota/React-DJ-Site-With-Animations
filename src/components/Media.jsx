@@ -49,10 +49,9 @@ class Media extends Component {
           header="Media"
           handleCloseButton={!loading ? this.handleCloseButton : null}
         >
-          <h3 className="ui header intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-            possimus?
-          </h3>
+          {/* <h3 className="ui header intro">
+
+          </h3> */}
 
           <Carousel
             infiniteLoop
