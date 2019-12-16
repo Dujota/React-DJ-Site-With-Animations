@@ -51,54 +51,65 @@ class Contact extends Component {
     return (
       <div id="contact">
         <ContentContainer
-          header="Contact"
+          header="Get in Touch"
           handleCloseButton={this.handleCloseButton}
         >
           <div className="contact-content">
             {/* DETAILS SECTION */}
             <section className="contact-details ">
               <h5 className="contact-me-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-                animi deleniti. Dolor laborum impedit tempora minus adipisci
-                quia tenetur officiis dolores at, possimus atque earum doloribus
-                dolore tempore dicta qui.
+                Contact me ahead of time if you want to schedule additional live
+                music or performance
               </h5>
 
               {/* ICONS */}
               <div className="icon-container">
                 <div className="email-icon">
                   <i className="envelope outline icon" />
-                  <span className="text-content">DJName@example.com</span>
+                  <span className="text-content">Obushueva@gmail.com</span>
                 </div>
 
                 <div className="website-icon">
                   <i className="globe icon" />
-                  <span className="text-content">www.DJName.com</span>
+                  <span className="text-content">MusicForever.bz</span>
                 </div>
 
                 <div className="facebook-icon">
                   <i className="facebook f icon" />
-                  <span className="text-content">DJName Profile Link</span>
+                  <span className="text-content">Olga.Bushuyeva</span>
                 </div>
 
                 <div className="instagram-icon">
                   <i className="instagram icon" />
-                  <span className="text-content">@DJName</span>
+                  <span className="text-content"> @Ollggie </span>
                 </div>
               </div>
             </section>
             {/* CONTACT FORM  */}
             <section className="form-content ">
-              <form className="ui form">
+              <form className="ui form" name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
+
                 <div className="field">
-                  <input type="text" name="name" placeholder="Name" rows="5" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    rows="5"
+                    required
+                  />
                 </div>
                 <div className="field">
-                  <input type="text" name="email" placeholder="Email Address" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
                 </div>
 
                 <div className="field">
-                  <textarea placeholder="Shoot me a Line!" />
+                  <textarea name="message" placeholder="Shoot me a Line!" />
                 </div>
 
                 <button className="ui button submit-button" type="submit">
