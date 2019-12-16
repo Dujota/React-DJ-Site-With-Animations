@@ -1,8 +1,8 @@
 .overlay {
-  // background-image: url('../images/pattern.png');
+
   min-width: 100vw;
   min-height: 100vh;
-  // background-size: 0.4rem;
+
   display: flex;
   align-items: center;
   position: fixed;
@@ -10,22 +10,14 @@
 
   .content-container {
     padding: 20px;
-    // min-height: 70vh;
-    // min-width: 50%;
-    // overflow-x: hidden;
     animation-duration: 2.3s;
 
-    // border: solid teal;
     text-align: center;
 
     @media only screen and (max-width: 460px) {
       margin-top: 1rem;
       height: 100vh;
     }
-
-    // @media only screen and (max-width: 380px) {
-    //   margin: 0 0 30px 0;
-    // }
 
     .close-button-container {
       margin: 20px;
